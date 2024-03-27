@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <title>Flexbox Фотогалерея</title>
     <style>
+        section.gallery {
+            margin: auto;
+        }
         body, ul, li {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
         }
-
         .gallery {
             list-style-type: none;
         }
-
         .gallery li {
-            flex-basis: 33.33%;
             box-sizing: border-box;
-            padding: 1%;
+            flex-basis: 30%;
+            padding: 2%;
+            padding-left: 7%;
         }
-
         .gallery li img {
-            padding: 9% 5%;
-            border: 15px solid black;
             width: 100%;
+            padding: 4%;
             object-fit: contain;
-        }
-
-        .gallery ul {
-            padding: 0;
-            margin: 0;
+            border: 0.8em solid black;
         }
     </style>
 </head>
 <body>
 <section class="gallery">
-    <ul>
+    <ul class="gallery">
         <li><img src="pictures1/picture1.jpg"></li>
         <li><img src="pictures1/picture2.jpg"></li>
         <li><img src="pictures1/picture3.jpg"></li>
