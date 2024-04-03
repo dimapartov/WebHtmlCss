@@ -22,12 +22,12 @@
         }
 
         th, td {
-            border: 1px solid #ddd;
+            border: 1px solid rgb(221, 221, 221);
             padding: 1%;
             text-align: left;
         }
 
-        @media only screen and (max-width: 600px) {
+        @media screen and (max-width: 600px) {
             table, thead, tbody, th, td, tr {
                 display: block;
             }
@@ -41,12 +41,12 @@
             }
 
             td {
-                border: 1px solid #ddd;
+                border: 1px solid rgb(221, 221, 221);
                 position: relative;
                 padding-left: 35%;
             }
 
-            td:before {
+            td::before {
                 position: absolute;
                 left: 6px;
                 content: attr(data-label);
